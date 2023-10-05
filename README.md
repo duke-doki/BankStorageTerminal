@@ -8,8 +8,10 @@ and other required information. The main purpose is to check if visitor suspicio
 ### How to install
 
 This project uses env variables such as website address and passwords. They can be setted up via `settings.py`.
-The main ones are `DB_DEBUG`, `DB_HOST`, `DB_PASSWORD`, `DB_SECRET_KEY`, `DB_ALLOWED_HOSTS`. They
+The main ones are `DEBUG`, `DB_HOST`, `DB_PASSWORD`, `SECRET_KEY`, `ALLOWED_HOSTS`. They
 respectively affect debugging, database's address and password, secret key and also allowed local hosts.
+Turn the `DEBUG` option on to see detailed error pages, enter your host name, password and secret
+key to access the site and select the host/domain names that this Django site can serve with `ALLOWED_HOSTS`.
 
 Python3 should be already installed. 
 Then use `pip` (or `pip3`, if there is a conflict with Python2) to install dependencies:
